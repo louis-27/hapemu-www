@@ -74,7 +74,7 @@ export default function Page() {
                                     <tr>
                                         <th scope="col" className="px-6 py-4">Rank</th>
                                         <th scope="col" className="px-6 py-4">Device</th>
-                                        <th scope="col" className="px-6 py-4 bg-blue-100 font-bold">Camera</th>
+                                        <th scope="col" className="px-6 py-4 bg-blue-100 font-bold rounded-t-2xl">Camera</th>
                                         <th title="Evaluates the main camera performances for capturing still images in various lighting environments"
                                             scope="col" className="px-6 py-4">Photo</th>
                                         <th title="" scope="col" className="px-6 py-4">Zoom</th>
@@ -107,7 +107,7 @@ export default function Page() {
                                     <tr className="transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">3</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Cell</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold rounded-b-2xl">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
