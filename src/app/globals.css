@@ -31,3 +31,20 @@ body {
     text-wrap: balance;
   }
 }
+
+[data-title]:hover:after { 
+  visibility: visible; 
+} 
+
+[data-title]:after { 
+  content: attr(data-title); 
+  background-color: #34465C;
+  color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: left;
+  font-size: 1em; 
+  position: absolute; 
+  border-radius: 0.25em;
+  padding: 0.5em 1em 0.5em 1em; 
+  visibility: hidden; 
+}
