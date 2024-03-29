@@ -48,3 +48,8 @@ body {
   padding: 0.5em 1em 0.5em 1em; 
   visibility: hidden; 
 }
+
+tr:hover td {
+  transition: all 300ms ease-in-out;
+  background-color: var(--bg-neutral-100);
+}

@@ -9,8 +9,6 @@ export default function Page() {
                 */}
             </div>
 
-            
-
             <div className="flex flex-col w-4/5 mx-auto block rounded-lg bg-white p-5 text-surface shadow-secondary-1">
                 <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
