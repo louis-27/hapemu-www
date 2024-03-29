@@ -9,18 +9,18 @@ export default function Page() {
                 */}
             </div>
 
-            <div className="flex flex-col w-4/5 mx-auto block rounded-lg bg-white p-5 text-surface shadow-secondary-1">
-                <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-                    <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-                        <div className="overflow-hidden">
+            <div className="flex flex-col w-3/5 mx-auto block rounded-lg bg-white p-5 text-surface shadow-secondary-1">
+                {/* <div className="overflow-x-auto sm:-mx-6 lg:-mx-8"> */}
+                    {/* <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8"> */}
+                        {/* <div className="overflow-hidden"> */}
                             <table
                                 className="min-w-full text-left text-sm font-light text-surface">
                                 <thead
-                                    className="border-b border-neutral-200 font-medium text-center">
+                                    className="border-b border-neutral-100 font-medium text-center">
                                     <tr>
                                         <th scope="col" className="px-6 py-4">Rank</th>
-                                        <th scope="col" className="px-6 py-4">Device</th>
-                                        <th scope="col" className="px-6 py-4 bg-blue-100 font-bold rounded-t-2xl">Camera</th>
+                                        <th scope="col" className="columns-4 px-6 py-4">Device</th>
+                                        <th scope="col" className="px-6 py-4 bg-blue-50 text-sky-600 font-bold rounded-t-2xl">Camera</th>
                                         <th data-title="Evaluates the main camera performances for capturing still images in various lighting environments"
                                             scope="col" className="px-6 py-4">
                                             Photo
@@ -59,260 +59,260 @@ export default function Page() {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center font-bold">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">1</td>
-                                        <td className="whitespace-nowrap px-6 py-4 text-start">Infinix Note 40 Pro</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 text-start font-medium">Infinix Note 40 Pro</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                     </tr>
-                                    <tr className="border-b border-neutral-200 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
+                                    <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Iphone 15 Pro Max</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
@@ -322,7 +322,7 @@ export default function Page() {
                                     <tr className="transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">3</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start">Cell</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-100 hover:bg-neutral-100 font-bold rounded-b-2xl">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold rounded-b-2xl">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
                                         <td className="whitespace-nowrap px-6 py-4">Cell</td>
@@ -331,12 +331,10 @@ export default function Page() {
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
-                    </div>
-                </div>
+                        {/* </div> */}
+                    {/* </div> */}
+                {/* </div> */}
             </div>
-
-
 
             <div className="flex flex-col w-4/5 mx-auto block rounded-lg bg-slate-200 p-5 text-surface shadow-secondary-1">
                 {/*
