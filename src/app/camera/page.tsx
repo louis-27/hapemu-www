@@ -1,6 +1,10 @@
+import SideNav from '@/src//app/ui/sidenav';
+
 export default function Page() {
     return (
         <main className="bg-slate-200 min-h-screen text-black">
+            <SideNav />
+            
             <div className="flex flex-col w-4/5 mx-auto block rounded-lg bg-slate-200 p-5 text-surface shadow-secondary-1">
                 {/*
                     Aku agak buntu dengan margin top, karena setiap kali
