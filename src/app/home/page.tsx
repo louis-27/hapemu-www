@@ -19,7 +19,7 @@ export default function Page() {
                         Cari Hapemu
                     </a>
                 </div>
-                <img src="/Merek_Smartphone.svg" alt="" />
+                <img src="/Merek_Smartphone.svg" alt="Merek Hape" />
             </div>
         </div>
     );
