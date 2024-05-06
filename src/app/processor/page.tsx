@@ -23,33 +23,33 @@ export default function Page() {
                                     className="border-b border-neutral-100 font-medium text-center">
                                     <tr>
                                         <th scope="col" className="px-2 py-3 lg:px-6 lg:py-4">Rank</th>
-                                        <th scope="col" className="columns-2 px-2 py-3 lg:px-6 lg:py-4">Device</th>
-                                        <th scope="col" className="px-2 py-3 lg:px-6 lg:py-4">Processor</th>
+                                        <th scope="col" className="columns-2 px-2 py-3 lg:px-6 lg:py-4">Hape</th>
+                                        <th scope="col" className="px-2 py-3 lg:px-6 lg:py-4">Prosessor</th>
                                         
-                                        <th scope="col" id="processorTotalScore" className="px-2 py-3 lg:px-6 lg:py-4 bg-red-50 text-red-600 font-bold rounded-t-2xl">Total Score</th>
+                                        <th scope="col" id="processorTotalScore" className="px-2 py-3 lg:px-6 lg:py-4 bg-red-50 text-red-600 font-bold rounded-t-2xl">Total Nilai</th>
                                         
-                                        <th data-title="Evaluates the main camera performances for capturing still images in various lighting environments"
+                                        <th data-title="Main processor or brain of the device responsible for executing instructions and carrying out computations"
                                             scope="col" className="hidden lg:table-cell px-2 py-3 lg:px-6 lg:py-4 ">
                                             CPU
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5 inline-block ms-1">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
                                             </svg>
                                         </th>
-                                        <th data-title="Evaluates the main camera performances for capturing still images in various lighting environments"
+                                        <th data-title="Specialized processor dedicated to rendering graphics, animations, and handling complex visual computations"
                                             scope="col" className="hidden lg:table-cell px-2 py-3 lg:px-6 lg:py-4">
                                             GPU
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5 inline-block ms-1">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
                                             </svg>
                                         </th>
-                                        <th data-title="Evaluates the main camera zoom in and zoom out capabilities for still images at various distances and lighting environments"
+                                        <th data-title="Used to store and retrieve data that is actively being used by the CPU and other components."
                                             scope="col" className="hidden lg:table-cell px-2 py-3 lg:px-6 lg:py-4">
                                             MEM
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5 inline-block ms-1">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
                                             </svg>
                                         </th>
-                                        <th data-title="Evaluates the performances of the main camera when taking portrait pictures with an out-of-focus blur background"
+                                        <th data-title="Smoothness, responsiveness, and overall user-friendliness of the device's interface and interactions"
                                             scope="col" className="hidden lg:table-cell px-2 py-3 lg:px-6 lg:py-4">
                                             UX
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5 inline-block ms-1">
