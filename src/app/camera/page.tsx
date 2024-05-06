@@ -13,7 +13,7 @@ export default function Page() {
                 */}
             </div>
 
-            <div className="flex flex-col w-3/5 mx-auto block rounded-lg bg-white p-5 text-surface shadow-secondary-1">
+            <div className="flex flex-col w-4/5 mx-auto block rounded-lg bg-white p-5 text-surface shadow-secondary-1">
                 {/* <div className="overflow-x-auto sm:-mx-6 lg:-mx-8"> */}
                     {/* <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8"> */}
                         {/* <div className="overflow-hidden"> */}
@@ -66,12 +66,12 @@ export default function Page() {
                                     <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center font-bold">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">1</td>
                                         <td className="whitespace-nowrap px-6 py-4 text-start font-medium">Infinix Note 40 Pro</td>
-                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">Cell</td>
-                                        <td className="whitespace-nowrap px-6 py-4">Cell</td>
-                                        <td className="whitespace-nowrap px-6 py-4">Cell</td>
-                                        <td className="whitespace-nowrap px-6 py-4">Cell</td>
-                                        <td className="whitespace-nowrap px-6 py-4">Cell</td>
-                                        <td className="whitespace-nowrap px-6 py-4">Cell</td>
+                                        <td className="whitespace-nowrap px-6 py-4 bg-blue-50 hover:bg-neutral-100 font-bold">123</td>
+                                        <td className="whitespace-nowrap px-6 py-4">121</td>
+                                        <td className="whitespace-nowrap px-6 py-4">101</td>
+                                        <td className="whitespace-nowrap px-6 py-4">65</td>
+                                        <td className="whitespace-nowrap px-6 py-4">132</td>
+                                        <td className="whitespace-nowrap px-6 py-4">65</td>
                                     </tr>
                                     <tr className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center">
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">2</td>

@@ -32,7 +32,7 @@ body {
 [data-title]:after {
   content: attr(data-title);
   background-color: #34465C;
-  width: 20em;
+  width: 14em;
   color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: left;
