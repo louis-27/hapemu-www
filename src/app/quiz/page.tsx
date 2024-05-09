@@ -1,57 +1,71 @@
 import SideNav from '@/src//app/ui/sidenav';
+import { Button, Checkbox, Label, TextInput } from "flowbite-react";
 
 export default function Page() {
     return (
         <main className="bg-slate-200 min-h-screen text-black">
             <SideNav />
 
-            {/* <div className="grid w-[40rem] grid-cols-4 gap-2 rounded-xl bg-gray-200 p-2">
-                <div>
-                    <input type="radio" name="option" id="1" value="1" className="peer hidden" checked />
-                    <label htmlFor="1" className="block cursor-pointer select-none rounded-xl p-2 text-center peer-checked:bg-blue-500 peer-checked:font-bold peer-checked:text-white">1</label>
-                </div>
+            <div className='flex flex-col w-4/5 mx-auto mt-5 block rounded-lg bg-white p-5 text-surface shadow-secondary-1'>
+                <h3 className="mb-5 text-lg font-medium text-gray-900 dark:text-white">How much do you expect to use each month?</h3>
+                <ul className="grid w-full gap-6 md:grid-cols-2">
+                    <li>
+                        <input type="radio" id="hosting-small" name="hosting" value="hosting-small" className="hidden peer" required />
+                        <label for="hosting-small" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <div className="block">
+                                <div className="w-full text-lg font-semibold">0-50 MB</div>
+                                <div className="w-full">Good for small websites</div>
+                            </div>
+                            <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="hosting-big" name="hosting" value="hosting-big" className="hidden peer" />
+                        <label for="hosting-big" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <div className="block">
+                                <div className="w-full text-lg font-semibold">500-1000 MB</div>
+                                <div className="w-full">Good for large websites</div>
+                            </div>
+                            <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="hosting-small2" name="hosting" value="hosting-small2" className="hidden peer" required />
+                        <label for="hosting-small2" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <div className="block">
+                                <div className="w-full text-lg font-semibold">0-50 MB</div>
+                                <div className="w-full">Good for small websites</div>
+                            </div>
+                            <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="hosting-big2" name="hosting" value="hosting-big2" className="hidden peer" />
+                        <label for="hosting-big2" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <div className="block">
+                                <div className="w-full text-lg font-semibold">500-1000 MB</div>
+                                <div className="w-full">Good for large websites</div>
+                            </div>
+                            <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </label>
+                    </li>
+                </ul>
+            </div>
 
-                <div>
-                    <input type="radio" name="option" id="2" value="2" className="peer hidden" />
-                    <label htmlFor="2" className="block cursor-pointer select-none rounded-xl p-2 text-center peer-checked:bg-blue-500 peer-checked:font-bold peer-checked:text-white">2</label>
-                </div>
-
-                <div>
-                    <input type="radio" name="option" id="3" value="3" className="peer hidden" />
-                    <label htmlFor="3" className="block cursor-pointer select-none rounded-xl p-2 text-center peer-checked:bg-blue-500 peer-checked:font-bold peer-checked:text-white">3</label>
-                </div>
-
-                <div>
-                    <input type="radio" name="option" id="4" value="3" className="peer hidden" />
-                    <label htmlFor="4" className="block cursor-pointer select-none rounded-xl p-2 text-center peer-checked:bg-blue-500 peer-checked:font-bold peer-checked:text-white">4</label>
-                </div>
-            </div> */}
-
-            <div role="radiogroup" className="mx-auto py-12 flex justify-center">
-
-                <div className="flex items-center">
-                    <div className="bg-white dark:bg-gray-100 rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative">
-                        <input aria-labelledby="label1" checked type="radio" name="radio" className="checkbox appearance-none focus:opacity-100 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:outline-none border rounded-full border-gray-400 absolute cursor-pointer w-full h-full checked:border-none" />
-                        <div className="check-icon hidden border-4 border-indigo-700 rounded-full w-full h-full z-1"></div>
-                    </div>
-                    <label id="label1" className="ml-2 text-sm leading-4 font-normal text-gray-800 dark:text-gray-100">On</label>
-                </div>
-
-                <div className="flex items-center ml-6">
-                    <div className="bg-white dark:bg-gray-100 rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative">
-                        <input aria-labelledby="label2" type="radio" name="radio" className="checkbox appearance-none focus:opacity-100 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:outline-none border rounded-full border-gray-400 absolute cursor-pointer w-full h-full checked:border-none" />
-                        <div className="check-icon hidden border-4 border-indigo-700 rounded-full w-full h-full z-1"></div>
-                    </div>
-                    <label id="label2" className="ml-2 text-sm leading-4 font-normal text-gray-800 dark:text-gray-100">Off</label>
-                </div>
-
-                <div className="flex items-center ml-6">
-                    <div className="rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative">
-                        <input aria-labelledby="disabled" disabled type="radio" name="radio" className="checkbox appearance-none focus:outline-none border rounded-full border-gray-400 absolute cursor-pointer w-full h-full checked:border-none" />
-                        <div className="check-icon hidden border-4 border-indigo-700 rounded-full w-full h-full z-1"></div>
-                    </div>
-                    <p id="disabled" className="ml-2 text-sm leading-4 font-normal text-gray-800 dark:text-gray-100">Disabled</p>
-                </div>
+            <div className='flex justify-center w-4/5 mx-auto mt-5 block p-5'>
+                <Button id='button' type="submit" className='bg-blue-500 lg:p-2 rounded-full'>
+                    <a href="/quizResult" className='lg:text-xl'>
+                        Cari Hape Impianku
+                    </a>
+                </Button>
             </div>
         </main>
     );

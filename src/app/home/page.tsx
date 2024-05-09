@@ -15,7 +15,7 @@ export default function Page() {
                     kami membantu kamu untuk mendapat jawabannya dalam 5 menit
                 </p>
                 <div className="flex flex-wrap justify-center">
-                    <a href="/quiz" className="bg-blue-600 px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-gray-100 dark:text-gray-900">
+                    <a id='button' href="/quiz" className="bg-blue-600 px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-gray-100 dark:text-gray-900">
                         Cari Hapemu
                     </a>
                 </div>
