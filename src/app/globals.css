@@ -32,7 +32,7 @@ body {
 [data-title]:after {
   content: attr(data-title);
   background-color: #34465C;
-  width: 20em;
+  width: 14em;
   color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: left;
@@ -84,10 +84,34 @@ th:hover {
   box-shadow: inset 0 -2px 0 #DC2626;
 }
 
-#quizButton:hover {
+#quizButton:hover, #button:hover {
   background-color: #1D4ED8;
 }
 
 #pages:hover {
   color: #1D4ED8;
+}
+
+.animate__animated.animate__tada {
+  --animate-duration: 3s;
+}
+
+#resultCard > div {
+  gap: 0;
+  padding: 0;
+}
+
+
+#email1 {
+  font-size: 1.5rem;
+}
+
+#email1:focus {
+  border-color: #3F83F8;
+}
+
+@media only screen and (max-width: 600px) {
+  #email1 {
+    font-size: 1rem;
+  }
 }

@@ -11,7 +11,7 @@ export default function SideNav() {
                 <span className="self-center whitespace-nowrap lg:text-xl font-semibold text-blue-500">Hapemu</span>
             </Navbar.Brand>
             <div className="flex md:order-2">
-                <Button id="quizButton" className="me-3 lg:me-0 bg-blue-500 hover:bg-red-700">Do Quiz</Button>
+                <Button id="quizButton" href="/quiz" className="me-3 lg:me-0 bg-blue-500 hover:bg-red-700">Cari Hapemu</Button>
                 <Navbar.Toggle />
             </div>
             <Navbar.Collapse>
