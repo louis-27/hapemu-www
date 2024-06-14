@@ -1,6 +1,6 @@
-import SideNav from '@/src//app/ui/sidenav';
+import SideNav from '@/src/app/ui/sidenav';
+import EmailForm from '@/src/app/components/email';
 import { Card } from "flowbite-react";
-import { Button, Checkbox, Label, TextInput } from "flowbite-react";
 import 'animate.css';
 
 export default function Page() {
@@ -43,16 +43,7 @@ export default function Page() {
                         </div>
                     </div>
                     <div className="bg-white rounded-b-3xl items-center justify-center p-4 space-y-4 sm:flex sm:space-x-4 sm:space-y-0">
-                        <form className="flex items-center gap-4">
-                            <div>
-                                <TextInput id="email1" type="email" placeholder="nama@gmail.com" required />
-                            </div>
-                            <Button id='button' type="submit" className='bg-blue-500 lg:p-2 rounded-full'>
-                                <a href="/home" className='lg:text-xl'>
-                                    Email Hasilku
-                                </a>
-                            </Button>
-                        </form>
+                        <EmailForm />
                     </div>
                 </Card>
 

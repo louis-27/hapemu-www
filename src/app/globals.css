@@ -102,16 +102,16 @@ th:hover {
 }
 
 
-#email1 {
+#email {
   font-size: 1.5rem;
 }
 
-#email1:focus {
+#email:focus {
   border-color: #3F83F8;
 }
 
 @media only screen and (max-width: 600px) {
-  #email1 {
+  #email {
     font-size: 1rem;
   }
 }

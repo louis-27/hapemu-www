@@ -1,5 +1,5 @@
-import Notes from '@/src/app/components/notes';
+import Smartphone from '~/app/components/smartphone';
 
 export default function Page() {
-    return <Notes />;
+    return <Smartphone />;
 }

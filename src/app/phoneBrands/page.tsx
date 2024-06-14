@@ -39,21 +39,21 @@ export default function Page() {
                             {/* <h3 className="mt-4 text-sm text-gray-700">Earthen Bottle</h3> */}
                             <p className="mt-4 text-3xl font-medium text-gray-900">Poco</p>
                         </Link>
-                        <Link href={`/phoneBrands/${encodeURIComponent('Realme')}`} className="group">
+                        <Link href={`/phoneBrands/${encodeURIComponent('Twice')}`} className="group">
                             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                                 <img src="/merek/Realme.svg" alt="Realme" className="h-full w-full object-cover object-center group-hover:opacity-75"></img>
                             </div>
                             {/* <h3 className="mt-4 text-sm text-gray-700">Earthen Bottle</h3> */}
                             <p className="mt-4 text-3xl font-medium text-gray-900">Realme</p>
                         </Link>
-                        <Link href={`/phoneBrands/${encodeURIComponent('Samsung')}`} className="group">
+                        <Link href={`/phoneBrands/${encodeURIComponent('RedVelvet')}`} className="group">
                             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                                 <img src="/merek/Samsung.svg" alt="Samsung" className="h-full w-full object-cover object-center group-hover:opacity-75"></img>
                             </div>
                             {/* <h3 className="mt-4 text-sm text-gray-700">Earthen Bottle</h3> */}
                             <p className="mt-4 text-3xl font-medium text-gray-900">Samsung</p>
                         </Link>
-                        <Link href={`/phoneBrands/${encodeURIComponent('Vivo')}`} className="group">
+                        <Link href={`/phoneBrands/${encodeURIComponent('KissofLife')}`} className="group">
                             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                                 <img src="/merek/Vivo.svg" alt="Vivo" className="h-full w-full object-cover object-center group-hover:opacity-75"></img>
                             </div>
