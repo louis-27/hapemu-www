@@ -5,22 +5,25 @@ import { Button, Checkbox, Label, TextInput } from "flowbite-react";
 
 const EmailForm = () => {
     const [email, setEmail] = useState('');
+    const [recommendations, setRecommendations] = useState(['a', 'b', 'c', 'd', 'e']);
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         try {
-            const response = await fetch('/api/send-email', {
+            const response = await fetch('/api/sendEmail', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ email }),
+                body: JSON.stringify({ email, recommendations }),
             });
-            
+
             if (response.ok) {
                 console.log('Email sent successfully');
+                console.log(response);
             } else {
                 console.error('Failed to send email');
+                console.log(response);
             }
             // const data = await response.json();
             // console.log(data);
@@ -37,9 +40,9 @@ const EmailForm = () => {
                     placeholder="nama@gmail.com" required />
             </div>
             <Button id='button' type="submit" className='bg-blue-500 lg:p-2 rounded-full'>
-                <a href="/home" className='lg:text-xl'>
+                {/* <a href="/home" className='lg:text-xl'> */}
                     Email Hasilku
-                </a>
+                {/* </a> */}
             </Button>
         </form>
         // <form onSubmit={handleSubmit}>

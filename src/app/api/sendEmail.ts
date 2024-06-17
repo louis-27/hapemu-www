@@ -2,8 +2,9 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+    console.log("ada disini");
     if (req.method === 'POST') {
-        const { email } = req.body;
+        const { email, recommendations } = req.body;
 
         try {
             const response = await fetch('http://localhost:8080/send-email', {
@@ -11,7 +12,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ email }),
+                body: JSON.stringify({ userEmail: email, recommendations }),
             });
 
             if (response.ok) {

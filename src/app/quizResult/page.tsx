@@ -1,5 +1,6 @@
 import SideNav from '@/src/app/ui/sidenav';
 import EmailForm from '@/src/app/components/email';
+import PostData from '@/src/app/components/scra';
 import { Card } from "flowbite-react";
 import 'animate.css';
 
@@ -23,7 +24,7 @@ export default function Page() {
                                 Hape yang kamu cari adalah
                             </p>
                             <p className="mb-2 text-xl sm:text-2xl">
-                                Asus ROG 8 Pro
+                                Asus ROG 8
                             </p>
                             <p className="mb-2 text-xl sm:text-2xl">
                                 Samsung Galaxy S24 Ultra
@@ -47,7 +48,7 @@ export default function Page() {
                     </div>
                 </Card>
 
-
+                <PostData />
 
 
                 <div className="flex flex-col w-4/5 mx-auto block rounded-lg bg-slate-200 p-5 text-surface shadow-secondary-1">
