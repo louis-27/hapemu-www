@@ -1,13 +1,14 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export async function POST(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {
-        try {
-            // Get the data from the request body
-            const name = 'yosuajayapura@gmail.com';
-            const age = ['Sohee', 'Chaeryeong', 'Vivi', 'Saerom', 'Mina'];
 
-            // Send the data to http://localhost:8080/send-email
+        // res.status(200).json({ message: 'Data sent successfully' });
+        try {
+            // const name = 'yosuajayapura@gmail.com';
+            const name = 'ard00243@gmail.com';
+            const age = ['Sohee', 'Chaeryeong', 'Yujin', 'Saerom', 'Mina'];
+            
             const response = await fetch('http://localhost:8080/send-email', {
                 method: 'POST',
                 headers: {
