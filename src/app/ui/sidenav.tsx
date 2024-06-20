@@ -16,7 +16,7 @@ export default function SideNav() {
             </div>
             <Navbar.Collapse>
                 <Navbar.Link id="pages" href="/home">Home</Navbar.Link>
-                <Navbar.Link id="pages" href="/phones">Semua Hape</Navbar.Link>
+                <Navbar.Link id="pages" href="/phoneBrands">Semua Hape</Navbar.Link>
                 <Navbar.Link id="pages" href="/processor">Prossesor Terbaik</Navbar.Link>
                 <Navbar.Link id="pages" href="/camera">Kamera Terbaik</Navbar.Link>
             </Navbar.Collapse>

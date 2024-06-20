@@ -1,5 +1,5 @@
-import { Alert } from "flowbite-react";
+import AllSmartphones from '@/src/app/components/allSmartphones';
 
-export default function MyPage() {
-    return <Alert color="info">Alert!</Alert>;
+export default function Page() {
+    return <AllSmartphones />;
 }
