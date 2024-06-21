@@ -10,7 +10,7 @@ const EmailForm = () => {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         try {
-            const response = await fetch('/api/sendEmail', {
+            const response = await fetch('http://localhost:8080/send-email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

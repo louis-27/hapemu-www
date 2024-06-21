@@ -48,7 +48,7 @@ export default function Page() {
                     </div>
                 </Card>
 
-                <PostData />
+                {/* <PostData /> */}
 
 
                 <div className="flex flex-col w-4/5 mx-auto block rounded-lg bg-slate-200 p-5 text-surface shadow-secondary-1">
