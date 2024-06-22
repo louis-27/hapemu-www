@@ -1,32 +1,42 @@
+// ========================================================================
+// ========================================================================
+// ========================================================================
+// =============================== Not Used =============================== 
+// ========================================================================
+// ========================================================================
+// ========================================================================
+
 import { NextApiRequest, NextApiResponse } from 'next';
 
 export async function POST(req: NextApiRequest, res: NextApiResponse) {
-    if (req.method === 'POST') {
+    console.log('Here');
+    try {
+        // const age = req.body.age;
+        const name = req.body.name;
+        // const name = 'yosuajayapura@gmail.com';
+        const age = ['Sohee', 'Eunbi', 'Jihyo', 'Jeewon', 'Chaeyun'];
 
-        // res.status(200).json({ message: 'Data sent successfully' });
-        try {
-            // const name = 'yosuajayapura@gmail.com';
-            const name = 'ard00243@gmail.com';
-            const age = ['Sohee', 'Chaeryeong', 'Yujin', 'Saerom', 'Mina'];
-            
-            const response = await fetch('http://localhost:8080/send-email', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ email: name, recommendations: age }),
-            });
+        console.log('Name: ', name);
+        const response = await fetch('http://localhost:8080/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email: name, recommendations: age }),
+        });
+        /////////// 
+        // const responseBody = await response.json();
 
-            if (response.ok) {
-                res.status(200).json({ message: 'Data sent successfully' });
-            } else {
-                res.status(500).json({ message: 'Error sending data' });
-            }
-        } catch (error) {
-            console.error('Error sending data:', error);
+        // console.log('Response status:', response.status);
+        // console.log('Response body:', responseBody);
+        /////////// 
+        if (response.ok) {
+            res.status(200).json({ message: 'Data sent successfully' });
+        } else {
             res.status(500).json({ message: 'Error sending data' });
         }
-    } else {
-        res.status(405).json({ message: 'Method Not Allowed' });
+    } catch (error) {
+        console.error('Error sending data:', error);
+        res.status(500).json({ message: 'Error sending data' });
     }
 }

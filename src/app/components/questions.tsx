@@ -1,6 +1,7 @@
 'use client'
 
 import { Button, Checkbox, Label, TextInput } from "flowbite-react";
+import Link from "next/link";
 import { useState } from 'react';
 
 export default function Questions() {
@@ -14,7 +15,7 @@ export default function Questions() {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         try {
-            const response = await fetch('/api/sendSmartphone', {
+            const response = await fetch('http://localhost:8080//get-recommendations', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -235,7 +236,7 @@ export default function Questions() {
                         <label htmlFor="kamera-tidak" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                             <div className="block">
                                 <div className="w-full text-lg font-semibold">Tidak terlalu</div>
-                                <div className="w-full">Hape Essensial</div>
+                                <div className="w-full">Selama bisa foto cukup jelas, sudah cukup</div>
                             </div>
                             <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -255,7 +256,7 @@ export default function Questions() {
                         <label htmlFor="kamera-cukup" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                             <div className="block">
                                 <div className="w-full text-lg font-semibold">Cukup Penting</div>
-                                <div className="w-full">Hape Midrange</div>
+                                <div className="w-full">Foto bukan segalanya tapi saya ingin kualitas foto bagus</div>
                             </div>
                             <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -276,7 +277,7 @@ export default function Questions() {
                         <label htmlFor="kamera-penting" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                             <div className="block">
                                 <div className="w-full text-lg font-semibold">Penting</div>
-                                <div className="w-full">Hape Premium</div>
+                                <div className="w-full">Saya menginginkan kualitas kamera yang tinggi</div>
                             </div>
                             <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -296,7 +297,7 @@ export default function Questions() {
                         <label htmlFor="kamera-sangat" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                             <div className="block">
                                 <div className="w-full text-lg font-semibold">Sangat Penting</div>
-                                <div className="w-full">Saya Influencer</div>
+                                <div className="w-full">Saya Fotografer/Desainer/Model</div>
                             </div>
                             <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -325,7 +326,7 @@ export default function Questions() {
                         <label htmlFor="ram-tidak" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                             <div className="block">
                                 <div className="w-full text-lg font-semibold">4GB - 6GB</div>
-                                <div className="w-full">Hape Essensial</div>
+                                <div className="w-full">Aplikasi yang saya gunakan itu-itu saja</div>
                             </div>
                             <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -345,7 +346,7 @@ export default function Questions() {
                         <label htmlFor="ram-cukup" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                             <div className="block">
                                 <div className="w-full text-lg font-semibold">6GB - 8GB</div>
-                                <div className="w-full">Hape Midrange</div>
+                                <div className="w-full">Cukup banyak aplikasi yang saya gunakan</div>
                             </div>
                             <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -366,7 +367,7 @@ export default function Questions() {
                         <label htmlFor="ram-penting" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                             <div className="block">
                                 <div className="w-full text-lg font-semibold">8GB - 12GB</div>
-                                <div className="w-full">Hape Premium</div>
+                                <div className="w-full">Saya menggunakan banyak aplikasi bersamaan</div>
                             </div>
                             <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -386,7 +387,7 @@ export default function Questions() {
                         <label htmlFor="ram-sangat" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                             <div className="block">
                                 <div className="w-full text-lg font-semibold">12GB - 16GB</div>
-                                <div className="w-full">Hape Ultra Premium</div>
+                                <div className="w-full">Saya mengedit video di hape</div>
                             </div>
                             <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -415,7 +416,7 @@ export default function Questions() {
                         <label htmlFor="penyimpanan-tidak" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                             <div className="block">
                                 <div className="w-full text-lg font-semibold">64GB - 128GB</div>
-                                <div className="w-full">Hape Essensial</div>
+                                <div className="w-full">Saya tidak mengunduh banyak aplikasi dan/atau menyimpan banyak foto dan video</div>
                             </div>
                             <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -435,7 +436,7 @@ export default function Questions() {
                         <label htmlFor="penyimpanan-cukup" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                             <div className="block">
                                 <div className="w-full text-lg font-semibold">128GB - 256GB</div>
-                                <div className="w-full">Hape Midrange</div>
+                                <div className="w-full">Saya mengunduh cukup banyak aplikasi dan/atau video maupun foto</div>
                             </div>
                             <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -456,7 +457,7 @@ export default function Questions() {
                         <label htmlFor="penyimpanan-penting" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                             <div className="block">
                                 <div className="w-full text-lg font-semibold">256GB - 512GB</div>
-                                <div className="w-full">Hape Premium</div>
+                                <div className="w-full">Saya menyimpan lumayan banyak video dan/atau game berukuran besar</div>
                             </div>
                             <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -476,7 +477,7 @@ export default function Questions() {
                         <label htmlFor="penyimpanan-sangat" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                             <div className="block">
                                 <div className="w-full text-lg font-semibold">512GB - 1TB</div>
-                                <div className="w-full">Hape Ultra Premium</div>
+                                <div className="w-full">Saya menyimpan banyak video dan/atau game berukuran besar</div>
                             </div>
                             <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -504,7 +505,7 @@ export default function Questions() {
                         <label htmlFor="baterai-tidak" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                             <div className="block">
                                 <div className="w-full text-lg font-semibold">3500mAh - 4000mAh</div>
-                                <div className="w-full">Hape Essensial</div>
+                                <div className="w-full">Saya menggunakan hape kurang dari 6 jam perhari</div>
                             </div>
                             <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -524,7 +525,7 @@ export default function Questions() {
                         <label htmlFor="baterai-cukup" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                             <div className="block">
                                 <div className="w-full text-lg font-semibold">4000mAh - 4500mAh</div>
-                                <div className="w-full">Hape Midrange</div>
+                                <div className="w-full">Saya menggunakan hape 6 hingga 7 jam perhari</div>
                             </div>
                             <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -545,7 +546,7 @@ export default function Questions() {
                         <label htmlFor="baterai-penting" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                             <div className="block">
                                 <div className="w-full text-lg font-semibold">4500mAh - 5000mAh</div>
-                                <div className="w-full">Hape Premium</div>
+                                <div className="w-full">Saya menggunakan hape 7 hingga 8 jam perhari</div>
                             </div>
                             <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -565,7 +566,7 @@ export default function Questions() {
                         <label htmlFor="baterai-sangat" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                             <div className="block">
                                 <div className="w-full text-lg font-semibold">Lebih dari 5000mAh</div>
-                                <div className="w-full">Hape Ultra Premium</div>
+                                <div className="w-full">Saya menggunakan hape lebih dari 8 jam perhari</div>
                             </div>
                             <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -577,9 +578,9 @@ export default function Questions() {
 
             <div className='flex justify-center w-4/5 mx-auto mt-5 block p-5'>
                 <Button id='button' type="submit" className='bg-blue-500 lg:p-2 rounded-full'>
-                    <a href="/quizResult" className='lg:text-xl'>
+                    <Link href="/quizResult" className='lg:text-xl'>
                         Cari Hape Impianku
-                    </a>
+                    </Link>
                 </Button>
             </div>
         </form>
