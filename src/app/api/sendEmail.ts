@@ -1,8 +1,11 @@
-// pages/api/send-email.js
+// Sepertinya tidak terpakai
+// karena sudah dilakukan dari
+// components/email.tsx
+
+
 import { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-    console.log("ada disini");
     if (req.method === 'POST') {
         const { email, recommendations } = req.body;
 

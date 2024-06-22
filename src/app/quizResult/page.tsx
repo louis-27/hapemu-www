@@ -21,22 +21,22 @@ export default function Page() {
 
                         <div className='flex flex-col justify-center px-2 md:px-5'>
                             <p className="mb-2 text-xl sm:text-2xl">
-                                Hape yang kamu cari adalah
+                                Hapemu adalah
                             </p>
                             <p className="mb-2 text-xl sm:text-2xl">
-                                Asus ROG 8
+                                Apple iPhone 15 Pro Max
                             </p>
                             <p className="mb-2 text-xl sm:text-2xl">
-                                Samsung Galaxy S24 Ultra
+                                Apple iPhone 15 Pro
                             </p>
                             <p className="mb-2 text-xl sm:text-2xl">
-                                Samsung Galaxy S24 Plus
+                                Vivo X100 Pro
                             </p>
                             <p className="mb-2 text-xl sm:text-2xl">
-                                Samsung Galaxy S24
+                                Apple iPhone 14 Pro Max
                             </p>
                             <p className="mb-2 text-xl sm:text-2xl">
-                                Samsung Galaxy S23 Ultra
+                                Apple iPhone 14 Pro
                             </p>
                             <p className="mb-2 text-xl sm:text-2xl">
                                 Terima kasih.
