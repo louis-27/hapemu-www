@@ -1,5 +1,5 @@
-import Smartphone from '~/app/components/smartphone';
+import Smartphone from "~/components/smartphone";
 
 export default function Page() {
-    return <Smartphone />;
+  return <Smartphone />;
 }
