@@ -3,11 +3,17 @@
 import { useRouter } from 'next/navigation'
 import React, { useState } from 'react';
 import { Button, TextInput } from "flowbite-react";
+import { useSearchParams } from 'next/navigation';
 
 const EmailForm = () => {
     const [email, setEmail] = useState('');
-    const [recommendations] = useState(['Apple iPhone 15 Pro Max', 'Apple iPhone 15 Pro', 'Vivo X100 Pro', 'Apple iPhone 14 Pro Max', 'Apple iPhone 14 Pro']);
-    
+    const searchParams = useSearchParams();
+    const recommendationsParam = searchParams.get('recommendations');
+    const recommendations = recommendationsParam
+                            ? JSON.parse(decodeURIComponent(recommendationsParam))
+                            : [];
+    // const [recommendations] = useState(['Apple iPhone 15 Pro Max', 'Apple iPhone 15 Pro', 'Vivo X100 Pro', 'Apple iPhone 14 Pro Max', 'Apple iPhone 14 Pro']);
+
     const [error, setError] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const router = useRouter();
@@ -43,13 +49,13 @@ const EmailForm = () => {
     return (
         <form onSubmit={handleSubmit} className="flex flex-col items-center gap-4">
             <div>
-                <TextInput 
-                    id="email" 
-                    type="email" 
+                <TextInput
+                    id="email"
+                    type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="nama@gmail.com" 
-                    required 
+                    placeholder="nama@gmail.com"
+                    required
                 />
             </div>
             <Button id='button' type="submit" className='bg-blue-500 lg:p-2 rounded-full' disabled={isLoading}>

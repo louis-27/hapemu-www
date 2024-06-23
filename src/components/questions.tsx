@@ -1,5 +1,6 @@
 'use client'
 
+import { useRouter } from 'next/navigation'
 import { Button, Checkbox, Label, TextInput } from "flowbite-react";
 import Link from "next/link";
 import { useState } from 'react';
@@ -11,29 +12,49 @@ export default function Questions() {
     const [ram, setRam] = useState('');
     const [penyimpanan, setPenyimpanan] = useState('');
     const [baterai, setBaterai] = useState('');
+    const [error, setError] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
+    const router = useRouter();
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        setIsLoading(true);
+        setError('');
+
         try {
-            const response = await fetch('http://localhost:8080//get-recommendations', {
+            const response = await fetch('http://localhost:8080/get-recommendations', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ harga, prosessor, kamera, ram, penyimpanan, baterai }),
+                body: JSON.stringify({
+                    price: harga,
+                    processor: prosessor,
+                    camera: kamera,
+                    battery: baterai,
+                    ram: ram,
+                    storage: penyimpanan
+                }),
             });
 
             if (response.ok) {
-                console.log('Email sent successfully');
-                console.log(response);
+                const data = await response.json();
+                console.log('Recommendations received:', data);
+                // Pass the data to the email page
+                // router.push('/quizResult', undefined, {
+                //     state: { 
+                //         recommendations: JSON.stringify(data) 
+                //     },
+                // });
+                router.push(`/quizResult?recommendations=${encodeURIComponent(JSON.stringify(data))}`);
             } else {
-                console.error('Failed to send email');
-                console.log(response);
+                const errorData = await response.text();
+                setError(`Failed to get recommendations: ${response.status} ${response.statusText}. ${errorData}`);
             }
-            // const data = await response.json();
-            // console.log(data);
         } catch (error) {
-            console.error(error);
+            setError(`An error occurred: ${error instanceof Error ? error.message : String(error)}`);
+        } finally {
+            setIsLoading(false);
         }
     };
 
@@ -45,15 +66,15 @@ export default function Questions() {
                     <li>
                         <input
                             type="radio"
-                            id="harga-essensial"
+                            id="harga-essential"
                             name="harga"
-                            value="harga-essensial"
+                            value="harga-essential"
                             className="hidden peer"
                             required
-                            checked={harga === 'harga-essensial'}
-                            onChange={() => setHarga('harga-essensial')}
+                            checked={harga === 'harga-essential'}
+                            onChange={() => setHarga('harga-essential')}
                         />
-                        <label htmlFor="harga-essensial" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        <label htmlFor="harga-essential" className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                             <div className="block">
                                 <div className="w-full text-lg font-semibold">Rp1.000.000 - Rp3.000.000</div>
                                 <div className="w-full">Hape Essensial</div>
@@ -577,12 +598,11 @@ export default function Questions() {
             </div>
 
             <div className='flex justify-center w-4/5 mx-auto mt-5 block p-5'>
-                <Button id='button' type="submit" className='bg-blue-500 lg:p-2 rounded-full'>
-                    <Link href="/quizResult" className='lg:text-xl'>
-                        Cari Hape Impianku
-                    </Link>
+                <Button id='button' type="submit" className='bg-blue-500 lg:p-2 rounded-full' disabled={isLoading}>
+                    {isLoading ? 'Mencari...' : 'Cari Hape Impianku'}
                 </Button>
             </div>
+            {error && <p className="text-red-500 text-center">{error}</p>}
         </form>
     );
 }

@@ -53,16 +53,16 @@ export default async function Page() {
         <table className="min-w-full text-left text-sm font-light text-surface">
           <thead className="border-b border-neutral-100 font-medium text-center">
             <tr>
-              <th scope="col" className="px-2 py-3 lg:px-6 lg:py-4">
+              <th scope="col" className="text-xs lg:text-sm px-2 py-3 lg:px-6 lg:py-4">
                 Rank
               </th>
-              <th scope="col" className="columns-2 px-2 py-3 lg:px-6 lg:py-4">
+              <th scope="col" className="text-xs lg:text-sm px-2 py-3 lg:columns-2 lg:px-6 lg:py-4">
                 Device
               </th>
               <th
                 scope="col"
                 id="cameraTotalScore"
-                className="px-2 py-3 lg:px-6 lg:py-4 bg-blue-50 text-sky-600 font-bold rounded-t-2xl"
+                className="text-xs lg:text-sm px-2 py-3 lg:px-6 lg:py-4 bg-blue-50 text-sky-600 font-bold rounded-t-2xl"
               >
                 Camera
               </th>
@@ -70,7 +70,7 @@ export default async function Page() {
               <th
                 data-title="Evaluates the main camera performances for capturing still images in various lighting environments"
                 scope="col"
-                className="hidden lg:table-cell px-2 py-3 lg:px-6 lg:py-4"
+                className="hidden lg:table-cell text-xs lg:text-sm px-2 py-3 lg:px-6 lg:py-4"
               >
                 Photo
                 <svg
@@ -91,7 +91,7 @@ export default async function Page() {
               <th
                 data-title="Evaluates the main camera zoom in and zoom out capabilities for still images at various distances and lighting environments"
                 scope="col"
-                className="hidden lg:table-cell px-2 py-3 lg:px-6 lg:py-4"
+                className="hidden lg:table-cell text-xs lg:text-sm px-2 py-3 lg:px-6 lg:py-4"
               >
                 Zoom
                 <svg
@@ -112,7 +112,7 @@ export default async function Page() {
               <th
                 data-title="Evaluates the performances of the main camera when taking portrait pictures with an out-of-focus blur background"
                 scope="col"
-                className="hidden lg:table-cell px-2 py-3 lg:px-6 lg:py-4"
+                className="hidden lg:table-cell text-xs lg:text-sm px-2 py-3 lg:px-6 lg:py-4"
               >
                 Bokeh
                 <svg
@@ -133,7 +133,7 @@ export default async function Page() {
               <th
                 data-title="Evaluates the main camera video recording in various lighting environments"
                 scope="col"
-                className="hidden lg:table-cell px-2 py-3 lg:px-6 lg:py-4"
+                className="hidden lg:table-cell text-xs lg:text-sm px-2 py-3 lg:px-6 lg:py-4"
               >
                 Video
                 <svg
@@ -154,7 +154,7 @@ export default async function Page() {
               <th
                 data-title="Evaluates the fidelity of the main camera application preview rendering compared to the actual capture"
                 scope="col"
-                className="hidden lg:table-cell px-2 py-3 lg:px-6 lg:py-4"
+                className="hidden lg:table-cell text-xs lg:text-sm px-2 py-3 lg:px-6 lg:py-4"
               >
                 Preview
                 <svg
@@ -181,28 +181,28 @@ export default async function Page() {
                   key={i.id}
                   className="border-b border-neutral-100 transition duration-300 ease-in-out hover:bg-neutral-100 text-center font-bold"
                 >
-                  <td className="whitespace-nowrap px-2 py-3 lg:px-6 lg:py-4 font-medium">
+                  <td className="whitespace-nowrap text-xs lg:text-sm px-2 py-3 lg:px-6 lg:py-4 font-medium">
                     {cnt + 1}
                   </td>
-                  <td className="whitespace-nowrap px-2 py-3 lg:px-6 lg:py-4 text-start font-medium">
+                  <td className="whitespace-nowrap text-wrap text-xs lg:text-sm px-2 py-3 lg:px-6 lg:py-4 text-start font-medium">
                     {i.name}
                   </td>
-                  <td className="whitespace-nowrap px-2 py-3 lg:px-6 lg:py-4 bg-blue-50 hover:bg-neutral-100 font-bold">
+                  <td className="whitespace-nowrap text-xs lg:text-sm px-2 py-3 lg:px-6 lg:py-4 bg-blue-50 hover:bg-neutral-100 font-bold">
                     {i.dxomarkScore?.toString()}
                   </td>
-                  <td className="hidden lg:table-cell whitespace-nowrap px-2 py-3 lg:px-6 lg:py-4">
+                  <td className="hidden lg:table-cell whitespace-nowrap text-xs lg:text-sm px-2 py-3 lg:px-6 lg:py-4">
                     {i.photo}
                   </td>
-                  <td className="hidden lg:table-cell whitespace-nowrap px-2 py-3 lg:px-6 lg:py-4">
+                  <td className="hidden lg:table-cell whitespace-nowrap text-xs lg:text-sm px-2 py-3 lg:px-6 lg:py-4">
                     {i.zoom}
                   </td>
-                  <td className="hidden lg:table-cell whitespace-nowrap px-2 py-3 lg:px-6 lg:py-4">
+                  <td className="hidden lg:table-cell whitespace-nowrap text-xs lg:text-sm px-2 py-3 lg:px-6 lg:py-4">
                     {i.bokeh}
                   </td>
-                  <td className="hidden lg:table-cell whitespace-nowrap px-2 py-3 lg:px-6 lg:py-4">
+                  <td className="hidden lg:table-cell whitespace-nowrap text-xs lg:text-sm px-2 py-3 lg:px-6 lg:py-4">
                     {i.video}
                   </td>
-                  <td className="hidden lg:table-cell whitespace-nowrap px-2 py-3 lg:px-6 lg:py-4">
+                  <td className="hidden lg:table-cell whitespace-nowrap text-xs lg:text-sm px-2 py-3 lg:px-6 lg:py-4">
                     {i.preview}
                   </td>
                 </tr>

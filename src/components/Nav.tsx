@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Nav() {
   return (
-    <Navbar fluid rounded>
+    <Navbar fluid rounded className="p-4">
       <Navbar.Brand href="/">
         <img src="/hapemu.svg" className="mr-2 h-9 sm:h-9" alt="Hapemu Logo" />
         <span className="self-center whitespace-nowrap lg:text-xl font-semibold text-blue-500">

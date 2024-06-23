@@ -23,6 +23,13 @@ export default async function Page() {
     <main className="bg-slate-200 min-h-screen text-black">
       <Nav />
 
+      <div className="flex flex-col w-4/5 mx-auto block rounded-lg bg-slate-200 p-6 text-surface shadow-secondary-1">
+          {/*
+                    Aku agak buntu dengan margin top, karena setiap kali
+                    dibuat pasti ada ruang hitam kosong, jadi aku pakai div
+                    ini sebagai margin top
+                */}
+        </div>
       <div className="flex flex-col w-5/5 lg:w-4/5 mx-auto rounded-lg bg-white p-5 text-surface shadow-secondary-1">
         <table className="min-w-full text-left text-sm font-light text-surface my-10">
           <thead className="border-b border-neutral-100 font-medium text-center">
@@ -165,6 +172,14 @@ export default async function Page() {
           </tbody>
         </table>
       </div>
+
+      <div className="flex flex-col w-4/5 mx-auto block rounded-lg bg-slate-200 p-4 text-surface shadow-secondary-1">
+          {/*
+                    Aku agak buntu dengan margin top, karena setiap kali
+                    dibuat pasti ada ruang hitam kosong, jadi aku pakai div
+                    ini sebagai margin top
+                */}
+        </div>
     </main>
   );
 }
