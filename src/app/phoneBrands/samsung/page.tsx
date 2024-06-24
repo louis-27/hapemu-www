@@ -21,7 +21,8 @@ export default async function Page() {
                 {smartphones?.map((smartphone) => (
                     <Card key={smartphone.id} className="max-w-sm lg:max-w-xs columns-2">
                         <img
-                            src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s24-ultra-5g-sm-s928-0.jpg"
+                            // src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s24-ultra-5g-sm-s928-0.jpg"
+                            src={smartphone.image}
                             alt="Photo of Smartphone"
                             className="h-full w-full object-cover object-center"
                         ></img>
