@@ -74,3 +74,93 @@
     @apply bg-background text-foreground;
   }
 }
+
+[data-title]:after {
+  content: attr(data-title);
+  background-color: #34465c;
+  width: 14em;
+  color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: left;
+  font-size: 1em;
+  position: absolute;
+  border-radius: 0.25em;
+  padding: 0.5em 1em 0.5em 1em;
+  visibility: hidden;
+}
+
+[data-title]:hover:after {
+  visibility: visible;
+}
+
+/*
+    jadi data-title nya ga mau diatas thead karena
+    data-title berada didalam thead 
+  */
+
+tr:hover td {
+  transition: all 300ms ease-in-out;
+  background-color: var(--bg-neutral-100);
+  border-radius: 0px;
+}
+
+th {
+  position: sticky;
+  top: 0px;
+  background: white;
+  z-index: 10;
+}
+
+th:hover {
+  z-index: 11;
+}
+
+#cameraTotalScore {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  box-shadow: inset 0 -2px 0 #0284c7;
+}
+
+#processorTotalScore {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  box-shadow: inset 0 -2px 0 #dc2626;
+}
+
+#quizButton:hover,
+#button:hover {
+  background-color: #1d4ed8;
+}
+
+#pages:hover {
+  color: #1d4ed8;
+}
+
+.animate__animated.animate__tada {
+  --animate-duration: 3s;
+}
+
+#resultCard > div {
+  gap: 0;
+  padding: 0;
+}
+
+#email {
+  font-size: 1.5rem;
+}
+
+#email:focus {
+  border-color: #3f83f8;
+}
+
+#home {
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  #email {
+    font-size: 1rem;
+  }
+}

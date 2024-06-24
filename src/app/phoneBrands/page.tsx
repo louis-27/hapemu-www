@@ -9,7 +9,7 @@ export default function Page() {
 
           <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
             <Link
-              href={`/phoneBrands/${encodeURIComponent("Apple")}`}
+              href="/phoneBrands/apple"
               className="group"
             >
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
@@ -23,7 +23,7 @@ export default function Page() {
               <p className="mt-4 text-3xl font-medium text-gray-900">Apple</p>
             </Link>
             <Link
-              href={`/phoneBrands/${encodeURIComponent("Asus")}`}
+              href="/phoneBrands/asus"
               className="group"
             >
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
@@ -37,21 +37,21 @@ export default function Page() {
               <p className="mt-4 text-3xl font-medium text-gray-900">Asus</p>
             </Link>
             <Link
-              href={`/phoneBrands/${encodeURIComponent("Infinix")}`}
+              href="/phoneBrands/google"
               className="group"
             >
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                 <img
-                  src="/merek/Infinix.svg"
-                  alt="Infinix"
+                  src="/merek/Google.svg"
+                  alt="Google"
                   className="h-full w-full object-cover object-center group-hover:opacity-75"
                 ></img>
               </div>
               {/* <h3 className="mt-4 text-sm text-gray-700">Earthen Bottle</h3> */}
-              <p className="mt-4 text-3xl font-medium text-gray-900">Infinix</p>
+              <p className="mt-4 text-3xl font-medium text-gray-900">Google</p>
             </Link>
             <Link
-              href={`/phoneBrands/${encodeURIComponent("Poco")}`}
+              href="/phoneBrands/poco"
               className="group"
             >
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
@@ -65,7 +65,7 @@ export default function Page() {
               <p className="mt-4 text-3xl font-medium text-gray-900">Poco</p>
             </Link>
             <Link
-              href={`/phoneBrands/${encodeURIComponent("Twice")}`}
+              href="/phoneBrands/realme"
               className="group"
             >
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
@@ -79,7 +79,7 @@ export default function Page() {
               <p className="mt-4 text-3xl font-medium text-gray-900">Realme</p>
             </Link>
             <Link
-              href={`/phoneBrands/${encodeURIComponent("RedVelvet")}`}
+              href="/phoneBrands/samsung"
               className="group"
             >
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
@@ -93,7 +93,7 @@ export default function Page() {
               <p className="mt-4 text-3xl font-medium text-gray-900">Samsung</p>
             </Link>
             <Link
-              href={`/phoneBrands/${encodeURIComponent("KissofLife")}`}
+              href="/phoneBrands/vivo"
               className="group"
             >
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
@@ -107,7 +107,7 @@ export default function Page() {
               <p className="mt-4 text-3xl font-medium text-gray-900">Vivo</p>
             </Link>
             <Link
-              href={`/phoneBrands/${encodeURIComponent("Aespa")}`}
+              href="/phoneBrands/xiaomi"
               className="group"
             >
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
