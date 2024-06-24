@@ -11,15 +11,12 @@ const EmailForm = () => {
     const searchParams = useSearchParams();
     const recommendationsParam = searchParams.get('recommendations');
 
-    console.log(recommendationsParam);
-
-    const recommendations = recommendationsParam
+    const parseRecommendations = recommendationsParam
         ? JSON.parse(decodeURIComponent(recommendationsParam))
         : [];
-    // const [recommendations] = useState(['Apple iPhone 15 Pro Max', 'Apple iPhone 15 Pro', 'Vivo X100 Pro', 'Apple iPhone 14 Pro Max', 'Apple iPhone 14 Pro']);
+    const [recommendations] = useState(parseRecommendations.recommendations);
 
-    console.log(recommendations);
-    console.log(typeof recommendations, recommendations);
+    console.log(parseRecommendations);
 
 
     const [error, setError] = useState('');
@@ -42,7 +39,7 @@ const EmailForm = () => {
 
             if (response.ok) {
                 console.log('Email sent successfully');
-                router.push('/home');
+                router.push('/');
             } else {
                 const errorData = await response.text();
                 setError(`Failed to send email: ${response.status} ${response.statusText}. ${errorData}`);
@@ -82,11 +79,15 @@ const EmailForm = () => {
                     </svg>
 
                     <div className="flex flex-col justify-center px-2 md:px-5">
-                        <p className="mb-2 text-xl sm:text-2xl">Hapemu adalah</p>
-                        <p className="mb-2 text-xl sm:text-2xl">Apple iPhone 15 Pro Max</p>
-                        {/* {recommendations.map((recommendation, index) => (
+                        {/* <p className="mb-2 text-xl sm:text-2xl">Hapemu adalah</p>
+                        <p className="mb-2 text-xl sm:text-2xl">{parseRecommendations.recommendations[0]}</p>
+                        <p className="mb-2 text-xl sm:text-2xl">{parseRecommendations.recommendations[1]}</p>
+                        <p className="mb-2 text-xl sm:text-2xl">{parseRecommendations.recommendations[2]}</p>
+                        <p className="mb-2 text-xl sm:text-2xl">{parseRecommendations.recommendations[3]}</p>
+                        <p className="mb-2 text-xl sm:text-2xl">{parseRecommendations.recommendations[4]}</p> */}
+                        {recommendations.map((recommendation, index) => (
                             <p key={index} className="mb-2 text-xl sm:text-2xl">{recommendation}</p>
-                        ))} */}
+                        ))}
                         <p className="mb-2 text-xl sm:text-2xl">Terima kasih.</p>
                     </div>
                 </div>
@@ -95,6 +96,7 @@ const EmailForm = () => {
                         <div>
                             <TextInput
                                 id="email"
+                                sizing="lg"
                                 type="email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
@@ -124,61 +126,3 @@ const EmailForm = () => {
 };
 
 export default EmailForm;
-
-/*
-'use client'
-
-import { redirect } from 'next/navigation'
-import React, { useState } from 'react';
-import { Button, Checkbox, Label, TextInput } from "flowbite-react";
-import Link from 'next/link';
-
-const EmailForm = () => {
-    const [email, setEmail] = useState('');
-    const [recommendations, setRecommendations] = useState(['Apple iPhone 15 Pro Max', 'Apple iPhone 15 Pro', 'Vivo X100 Pro', 'Apple iPhone 14 Pro Max', 'Apple iPhone 14 Pro']);
-
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        try {
-            const response = await fetch('http://localhost:8080/send-email', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ email, recommendations }),
-            });
-
-            if (response.ok) {
-                console.log('Email sent successfully');
-                console.log(response);
-            } else {
-                console.error('Failed to send email');
-                console.log(response);
-            }
-            // redirect('/home')
-
-            // const data = await response.json();
-            // console.log(data);
-        } catch (error) {
-            console.error(error);
-        }
-    };
-
-    return (
-        <form onSubmit={handleSubmit} className="flex items-center gap-4">
-            <div>
-                <TextInput id="email" type="email" value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="nama@gmail.com" required />
-            </div>
-            <Link href="/home" className='lg:text-xl'>
-                <Button id='button' type="submit" className='bg-blue-500 lg:p-2 rounded-full'>
-                    Email Hasilku
-                </Button>
-            </Link>
-        </form>
-    );
-};
-
-export default EmailForm;
-*/

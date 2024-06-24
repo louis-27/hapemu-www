@@ -1,5 +1,4 @@
 import prisma from "~/lib/db";
-import SideNav from "~/components/Nav";
 import { Card } from "flowbite-react";
 
 async function getData() {
@@ -13,9 +12,15 @@ async function getData() {
 
 export default async function Page() {
     const smartphones = await getData();
+
+    console.log(smartphones[0].launchDate)
+
+    const date = smartphones[0].launchDate
+    const formattedDate = date.toISOString().slice(0, 10);
+    console.log(formattedDate)
+
     return (
         <main className="bg-slate-200 min-h-screen text-black">
-            <SideNav />
 
             <div className="mx-5 mt-5 flex flex-wrap justify-center gap-4">
                 {smartphones?.map((smartphone) => (
@@ -31,7 +36,7 @@ export default async function Page() {
                                 {smartphone.name}
                             </h5>
                             <p className="text-sm font-bold text-gray-500 dark:text-gray-400">
-                            Rp{ parseInt(smartphone.price) * 15000 }
+                                Rp{parseInt(smartphone.price) * 15000}
                             </p>
 
                             <ul className="my-2 space-y-3">
@@ -54,7 +59,11 @@ export default async function Page() {
                                         </svg>
 
                                         <span className="ml-3 flex-1 px-2 whitespace-nowrap">
-                                        Rilis: {smartphone.launchDate.date}
+                                            {/*
+                                            const date = smartphones[0].launchDate
+                                            const formattedDate = date.toISOString().slice(0, 10);
+                                            */}
+                                            Rilis: {smartphone.launchDate.toISOString().slice(0, 10)}
                                         </span>
                                     </a>
                                 </li>
@@ -167,7 +176,7 @@ export default async function Page() {
                                             <path d="M12.378 1.602a.75.75 0 0 0-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03ZM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 0 0 .372-.648V7.93ZM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 0 0 .372.648l8.628 5.033Z" />
                                         </svg>
 
-                                        <span className="ml-3 flex-1 px-2 whitespace-nowrap">
+                                        <span className="ml-3 flex-1 px-2 whitespace-nowrap text-wrap">
                                             Penyimpanan: {smartphone.storage.split(' ')[0]}
                                             {/* Penyimpanan: {smartphone.storage} */}
                                         </span>
