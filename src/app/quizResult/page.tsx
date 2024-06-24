@@ -1,4 +1,3 @@
-import SideNav from "~/components/Nav";
 import EmailForm from "~/components/email";
 import PostData from "~/components/scra";
 import { Card } from "flowbite-react";
@@ -7,8 +6,6 @@ import "animate.css";
 export default function Page() {
   return (
     <main className="bg-slate-200 min-h-screen text-black">
-      <SideNav />
-
       <div className="mx-5 mt-5 flex flex-wrap justify-center gap-4">
         <Card
           id="resultCard"
