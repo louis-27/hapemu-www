@@ -70,16 +70,14 @@
   * {
     @apply border-border;
   }
-
   body {
     @apply bg-background text-foreground;
   }
 }
 
-
 [data-title]:after {
   content: attr(data-title);
-  background-color: #34465C;
+  background-color: #34465c;
   width: 14em;
   color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -106,7 +104,6 @@ tr:hover td {
   border-radius: 0px;
 }
 
-
 th {
   position: sticky;
   top: 0px;
@@ -122,41 +119,40 @@ th:hover {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  box-shadow: inset 0 -2px 0 #0284C7;
+  box-shadow: inset 0 -2px 0 #0284c7;
 }
 
 #processorTotalScore {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  box-shadow: inset 0 -2px 0 #DC2626;
+  box-shadow: inset 0 -2px 0 #dc2626;
 }
 
 #quizButton:hover,
 #button:hover {
-  background-color: #1D4ED8;
+  background-color: #1d4ed8;
 }
 
 #pages:hover {
-  color: #1D4ED8;
+  color: #1d4ed8;
 }
 
 .animate__animated.animate__tada {
   --animate-duration: 3s;
 }
 
-#resultCard>div {
+#resultCard > div {
   gap: 0;
   padding: 0;
 }
-
 
 #email {
   font-size: 1.5rem;
 }
 
 #email:focus {
-  border-color: #3F83F8;
+  border-color: #3f83f8;
 }
 
 #home {

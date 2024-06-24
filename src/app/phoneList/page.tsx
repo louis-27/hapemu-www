@@ -1,11 +1,8 @@
-import SideNav from "~/components/Nav";
 import { Card } from "flowbite-react";
 
 export default function Page() {
   return (
     <main className="bg-slate-200 min-h-screen text-black">
-      <SideNav />
-
       <div className="mx-5 mt-5 flex flex-wrap justify-center gap-4">
         <Card className="max-w-sm lg:max-w-xs columns-2">
           <img
