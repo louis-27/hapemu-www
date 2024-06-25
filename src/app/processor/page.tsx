@@ -195,8 +195,14 @@ async function getData() {
       (typeof b.total === "number" ? b.total : 0) -
       (typeof a.total === "number" ? a.total : 0)
   );
+  const final = res.filter(
+    (item) =>
+      item.name &&
+      ["iPhone", "Galaxy", "Google", "Mi"].includes(item.name.split(" ")[0])
+  );
+  // res.filter(item => ["Apple", "Samsung", "Google", "Xiaomi"].includes(item.brand));
 
-  return res;
+  return final;
 }
 
 // export default async function Page() {
