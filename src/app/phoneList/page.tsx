@@ -62,7 +62,7 @@ export default function Page() {
                   </svg>
 
                   <span className="ml-3 flex-1 px-2 whitespace-nowrap">
-                    Layar: 6.8" Inch
+                    Layar: 6.8&quot; Inch
                   </span>
                 </a>
               </li>
@@ -240,7 +240,7 @@ export default function Page() {
                   </svg>
 
                   <span className="ml-3 flex-1 px-2 whitespace-nowrap">
-                    Layar: 6.8" Inch
+                    Layar: 6.8&quot; Inch
                   </span>
                 </a>
               </li>
@@ -418,7 +418,7 @@ export default function Page() {
                   </svg>
 
                   <span className="ml-3 flex-1 px-2 whitespace-nowrap">
-                    Layar: 6.8" Inch
+                    Layar: 6.8&quot; Inch
                   </span>
                 </a>
               </li>
@@ -596,7 +596,7 @@ export default function Page() {
                   </svg>
 
                   <span className="ml-3 flex-1 px-2 whitespace-nowrap">
-                    Layar: 6.8" Inch
+                    Layar: 6.8&quot; Inch
                   </span>
                 </a>
               </li>

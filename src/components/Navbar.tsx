@@ -26,8 +26,9 @@ export function Navbar() {
               <span>Hapemu</span>
             </Link>
             <nav className="hidden md:flex gap-4">
-              {navigation.map((item) => (
+              {navigation.map((item, i) => (
                 <Link
+                  key={i}
                   href={item.href}
                   className="font-medium flex items-center text-sm transition-colors hover:underline"
                   prefetch={false}
@@ -59,8 +60,9 @@ export function Navbar() {
                   } transition-transform duration-300 ease-in-out`}
                 >
                   <div className="flex flex-col gap-4 p-4">
-                    {navigation.map((item) => (
+                    {navigation.map((item, i) => (
                       <Link
+                        key={i}
                         href={item.href}
                         className="font-medium flex items-center text-sm transition-colors hover:underline"
                         prefetch={false}
