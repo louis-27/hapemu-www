@@ -20,7 +20,7 @@ export function Navbar() {
     <>
       <header className="fixed inset-x-0 top-0 z-50 bg-white shadow-sm dark:bg-gray-950/90">
         <div className="w-full max-w-7xl mx-auto px-4">
-          <div className="flex justify-between h-14 items-center">
+          <div className="text-blue-600 flex justify-between h-14 items-center">
             <Link href="/" className="flex items-center" prefetch={false}>
               <PhoneIcon />
               <span>Hapemu</span>
@@ -29,7 +29,7 @@ export function Navbar() {
               {navigation.map((item) => (
                 <Link
                   href={item.href}
-                  className="font-medium flex items-center text-sm transition-colors hover:underline"
+                  className="text-blue-600 font-medium flex items-center text-sm transition-colors hover:underline"
                   prefetch={false}
                 >
                   {item.name}
@@ -38,7 +38,7 @@ export function Navbar() {
             </nav>
             <div className="flex items-center gap-4">
               <Link href={"/quiz"} target="_blank" prefetch={false}>
-                <Button size="default">Cari Hapemu</Button>
+                <Button size="default" className="bg-blue-500 hover:bg-blue-700">Cari Hapemu</Button>
               </Link>
               <Sheet>
                 <SheetTrigger asChild>
