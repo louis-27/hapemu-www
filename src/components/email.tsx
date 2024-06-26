@@ -30,13 +30,16 @@ const EmailForm = () => {
     setError("");
 
     try {
-      const response = await fetch("http://localhost:8080/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, recommendations }),
-      });
+      const response = await fetch(
+        "https://hapemu-app-y5a56.ondigitalocean.app/send-email",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email, recommendations }),
+        }
+      );
 
       if (response.ok) {
         console.log("Email sent successfully");
