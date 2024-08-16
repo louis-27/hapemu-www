@@ -11,6 +11,7 @@ const navigation = [
   { name: "Semua Hape", href: "/phoneBrands" },
   { name: "Prosesor Terbaik", href: "/processor" },
   { name: "Kamera Terbaik", href: "/camera" },
+  { name: "Bandingkan Hape", href: "/compare" },
 ];
 
 export function Navbar() {
@@ -39,7 +40,12 @@ export function Navbar() {
             </nav>
             <div className="flex items-center gap-4">
               <Link href={"/quiz"} target="_blank" prefetch={false}>
-                <Button size="default" className="bg-blue-500 hover:bg-blue-700">Cari Hapemu</Button>
+                <Button
+                  size="default"
+                  className="bg-blue-500 hover:bg-blue-700"
+                >
+                  Cari Hapemu
+                </Button>
               </Link>
               <Sheet>
                 <SheetTrigger asChild>
