@@ -271,7 +271,7 @@ export default function SmartphoneComparison({
               </ul>
             </div>
           </Card>
-          <Card className="max-w-sm lg:max-w-md columns-2 m-auto mt-5 bg-blue-500">
+          {/* <Card className="max-w-sm lg:max-w-md columns-2 m-auto mt-5 bg-blue-500">
             <h2 className="text-base font-semibold text-white lg:text-xl">
               DXOMARK Camera Score: {selectedItem.dxomarkScore}
             </h2>
@@ -280,7 +280,7 @@ export default function SmartphoneComparison({
             <h2 className="text-base font-semibold text-white lg:text-xl">
               Antutu Score: {selectedItem.dxomarkScore}
             </h2>
-          </Card>
+          </Card> */}
         </div>
 
         // </div>
