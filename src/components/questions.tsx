@@ -24,7 +24,7 @@ export default function Questions() {
     try {
       // const response = await fetch('http://localhost:8080/get-recommendations', {
       const response = await fetch(
-        `https://hapemu-app-y5a56.ondigitalocean.app/get-recommendations`,
+        `https://walrus-app-idqg4.ondigitalocean.app/get-recommendations`,
         {
           method: "POST",
           headers: {

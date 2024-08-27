@@ -31,7 +31,7 @@ const EmailForm = () => {
 
     try {
       const response = await fetch(
-        "https://hapemu-app-y5a56.ondigitalocean.app/send-email",
+        "https://walrus-app-idqg4.ondigitalocean.app/send-email",
         {
           method: "POST",
           headers: {
