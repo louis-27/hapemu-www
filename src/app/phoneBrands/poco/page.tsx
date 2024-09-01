@@ -134,7 +134,7 @@ export default async function Page() {
                     </svg>
 
                     <span className="ml-3 flex-1 px-2 whitespace-nowrap">
-                      Snapdragon 8 Gen 3
+                      {smartphone.processor}
                     </span>
                   </a>
                 </li>

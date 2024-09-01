@@ -100,21 +100,6 @@ export default function Questions() {
                 </div>
                 <div className="w-full">Hape Essensial</div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
           <li>
@@ -133,25 +118,10 @@ export default function Questions() {
             >
               <div className="block">
                 <div className="w-full text-lg font-semibold">
-                  Rp3.000.000 - Rp7.000.000
+                  Rp3.000.001 - Rp7.000.000
                 </div>
                 <div className="w-full">Hape Midrange</div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
           <li>
@@ -171,25 +141,10 @@ export default function Questions() {
             >
               <div className="block">
                 <div className="w-full text-lg font-semibold">
-                  Rp7.000.000 - Rp12.000.000
+                  Rp7.000.001 - Rp12.000.000
                 </div>
                 <div className="w-full">Hape Premium</div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
           <li>
@@ -212,21 +167,6 @@ export default function Questions() {
                 </div>
                 <div className="w-full">Hape Ultra Premium</div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
         </ul>
@@ -261,21 +201,6 @@ export default function Questions() {
                   media
                 </div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
           <li>
@@ -301,21 +226,6 @@ export default function Questions() {
                   sosial media
                 </div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
           <li>
@@ -339,21 +249,6 @@ export default function Questions() {
                   Saya sering main game dan edit video
                 </div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
           <li>
@@ -378,21 +273,6 @@ export default function Questions() {
                   Saya Streamer/Pemain E-Sport/Editor Video
                 </div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
         </ul>
@@ -426,21 +306,6 @@ export default function Questions() {
                   Selama bisa foto cukup jelas, sudah cukup
                 </div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
           <li>
@@ -465,21 +330,6 @@ export default function Questions() {
                   Foto bukan segalanya tapi saya ingin kualitas foto bagus
                 </div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
           <li>
@@ -503,21 +353,6 @@ export default function Questions() {
                   Saya menginginkan kualitas kamera yang tinggi
                 </div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
           <li>
@@ -540,21 +375,6 @@ export default function Questions() {
                 </div>
                 <div className="w-full">Saya Fotografer/Desainer/Model</div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
         </ul>
@@ -586,21 +406,6 @@ export default function Questions() {
                   Aplikasi yang saya gunakan itu-itu saja
                 </div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
           <li>
@@ -623,21 +428,6 @@ export default function Questions() {
                   Cukup banyak aplikasi yang saya gunakan
                 </div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
           <li>
@@ -656,26 +446,11 @@ export default function Questions() {
               className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
             >
               <div className="block">
-                <div className="w-full text-lg font-semibold">8GB - 12GB</div>
+                <div className="w-full text-lg font-semibold">12GB</div>
                 <div className="w-full">
                   Saya menggunakan banyak aplikasi bersamaan
                 </div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
           <li>
@@ -693,24 +468,11 @@ export default function Questions() {
               className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
             >
               <div className="block">
-                <div className="w-full text-lg font-semibold">12GB - 16GB</div>
+                <div className="w-full text-lg font-semibold">
+                  Lebih dari 12GB
+                </div>
                 <div className="w-full">Saya mengedit video di hape</div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
         </ul>
@@ -737,27 +499,14 @@ export default function Questions() {
               className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
             >
               <div className="block">
-                <div className="w-full text-lg font-semibold">64GB - 128GB</div>
+                <div className="w-full text-lg font-semibold">
+                  Kurang dari 128GB dan 128GB
+                </div>
                 <div className="w-full">
                   Saya tidak mengunduh banyak aplikasi dan/atau menyimpan banyak
                   foto dan video
                 </div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
           <li>
@@ -775,29 +524,12 @@ export default function Questions() {
               className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
             >
               <div className="block">
-                <div className="w-full text-lg font-semibold">
-                  128GB - 256GB
-                </div>
+                <div className="w-full text-lg font-semibold">256GB</div>
                 <div className="w-full">
                   Saya mengunduh cukup banyak aplikasi dan/atau video maupun
                   foto
                 </div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
           <li>
@@ -816,29 +548,12 @@ export default function Questions() {
               className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
             >
               <div className="block">
-                <div className="w-full text-lg font-semibold">
-                  256GB - 512GB
-                </div>
+                <div className="w-full text-lg font-semibold">512GB</div>
                 <div className="w-full">
                   Saya menyimpan lumayan banyak video dan/atau game berukuran
                   besar
                 </div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
           <li>
@@ -856,26 +571,13 @@ export default function Questions() {
               className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
             >
               <div className="block">
-                <div className="w-full text-lg font-semibold">512GB - 1TB</div>
+                <div className="w-full text-lg font-semibold">
+                  Lebih dari 512GB
+                </div>
                 <div className="w-full">
                   Saya menyimpan banyak video dan/atau game berukuran besar
                 </div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
         </ul>
@@ -909,21 +611,6 @@ export default function Questions() {
                   Saya menggunakan hape kurang dari 6 jam perhari
                 </div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
           <li>
@@ -942,27 +629,12 @@ export default function Questions() {
             >
               <div className="block">
                 <div className="w-full text-lg font-semibold">
-                  4000mAh - 4500mAh
+                  4001mAh - 4500mAh
                 </div>
                 <div className="w-full">
                   Saya menggunakan hape 6 hingga 7 jam perhari
                 </div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
           <li>
@@ -982,27 +654,12 @@ export default function Questions() {
             >
               <div className="block">
                 <div className="w-full text-lg font-semibold">
-                  4500mAh - 5000mAh
+                  4501mAh - 5000mAh
                 </div>
                 <div className="w-full">
                   Saya menggunakan hape 7 hingga 8 jam perhari
                 </div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
           <li>
@@ -1027,21 +684,6 @@ export default function Questions() {
                   Saya menggunakan hape lebih dari 8 jam perhari
                 </div>
               </div>
-              <svg
-                className="w-5 h-5 ms-3 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </label>
           </li>
         </ul>
