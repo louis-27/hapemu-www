@@ -19,7 +19,7 @@ export default function Page() {
               {/* <h3 className="mt-4 text-sm text-gray-700">Earthen Bottle</h3> */}
               <p className="mt-4 text-3xl font-medium text-gray-900">Apple</p>
             </Link>
-            <Link href="/phoneBrands/asus" className="group">
+            {/* <Link href="/phoneBrands/asus" className="group">
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                 <img
                   src="/merek/Asus.svg"
@@ -27,9 +27,8 @@ export default function Page() {
                   className="h-full w-full object-cover object-center group-hover:opacity-75"
                 ></img>
               </div>
-              {/* <h3 className="mt-4 text-sm text-gray-700">Earthen Bottle</h3> */}
               <p className="mt-4 text-3xl font-medium text-gray-900">Asus</p>
-            </Link>
+            </Link> */}
             <Link href="/phoneBrands/google" className="group">
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                 <img
@@ -41,7 +40,7 @@ export default function Page() {
               {/* <h3 className="mt-4 text-sm text-gray-700">Earthen Bottle</h3> */}
               <p className="mt-4 text-3xl font-medium text-gray-900">Google</p>
             </Link>
-            <Link href="/phoneBrands/poco" className="group">
+            {/* <Link href="/phoneBrands/poco" className="group">
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                 <img
                   src="/merek/Poco.svg"
@@ -49,10 +48,9 @@ export default function Page() {
                   className="h-full w-full object-cover object-center group-hover:opacity-75"
                 ></img>
               </div>
-              {/* <h3 className="mt-4 text-sm text-gray-700">Earthen Bottle</h3> */}
               <p className="mt-4 text-3xl font-medium text-gray-900">Poco</p>
-            </Link>
-            <Link href="/phoneBrands/realme" className="group">
+            </Link> */}
+            {/* <Link href="/phoneBrands/realme" className="group">
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                 <img
                   src="/merek/Realme.svg"
@@ -60,9 +58,8 @@ export default function Page() {
                   className="h-full w-full object-cover object-center group-hover:opacity-75"
                 ></img>
               </div>
-              {/* <h3 className="mt-4 text-sm text-gray-700">Earthen Bottle</h3> */}
               <p className="mt-4 text-3xl font-medium text-gray-900">Realme</p>
-            </Link>
+            </Link> */}
             <Link href="/phoneBrands/samsung" className="group">
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                 <img
@@ -74,7 +71,7 @@ export default function Page() {
               {/* <h3 className="mt-4 text-sm text-gray-700">Earthen Bottle</h3> */}
               <p className="mt-4 text-3xl font-medium text-gray-900">Samsung</p>
             </Link>
-            <Link href="/phoneBrands/vivo" className="group">
+            {/* <Link href="/phoneBrands/vivo" className="group">
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                 <img
                   src="/merek/Vivo.svg"
@@ -82,9 +79,8 @@ export default function Page() {
                   className="h-full w-full object-cover object-center group-hover:opacity-75"
                 ></img>
               </div>
-              {/* <h3 className="mt-4 text-sm text-gray-700">Earthen Bottle</h3> */}
               <p className="mt-4 text-3xl font-medium text-gray-900">Vivo</p>
-            </Link>
+            </Link> */}
             <Link href="/phoneBrands/xiaomi" className="group">
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                 <img
