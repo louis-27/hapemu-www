@@ -79,7 +79,9 @@ export default function CameraRankingTable({
               <TableRow>
                 <TableHead>#</TableHead>
                 <TableHead>Smartphone</TableHead>
-                <TableHead>DXOMark Score</TableHead>
+                <TableHead className="text-blue-600 font-bold">
+                  DXOMark Score
+                </TableHead>
                 <TableHead>Photo</TableHead>
                 <TableHead>Zoom</TableHead>
                 <TableHead>Bokeh</TableHead>
@@ -95,21 +97,20 @@ export default function CameraRankingTable({
                   </TableCell>
                   <TableCell>
                     <div className="flex items-center gap-4">
-                      <img
+                      {/* <img
                         src={item.image ?? "/placeholder.svg"}
                         width={50}
                         height={50}
                         alt={item.name}
                         className="rounded-lg"
-                      />
+                      /> */}
                       <div>
                         <h3 className="font-semibold">{item.name}</h3>
                       </div>
                     </div>
                   </TableCell>
                   <TableCell>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <StarIcon className="w-4 h-4 fill-primary" />
+                    <div className="flex items-center gap-2 text-md text-blue-600 font-bold">
                       <span>{item.dxomarkScore.toString()}</span>
                     </div>
                   </TableCell>

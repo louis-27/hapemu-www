@@ -74,7 +74,9 @@ export default function ProcessorRankingTable({
               <TableRow>
                 <TableHead>#</TableHead>
                 <TableHead>Smartphone</TableHead>
-                <TableHead>Total Antutu Score</TableHead>
+                <TableHead className="text-blue-600 font-bold">
+                  Total Antutu Score
+                </TableHead>
                 <TableHead>CPU</TableHead>
                 <TableHead>GPU</TableHead>
                 <TableHead>Memory</TableHead>
@@ -95,8 +97,7 @@ export default function ProcessorRankingTable({
                     </div>
                   </TableCell>
                   <TableCell>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <StarIcon className="w-4 h-4 fill-primary" />
+                    <div className="flex items-center gap-2 text-md font-bold text-blue-600">
                       <span>{item.total.toString()}</span>
                     </div>
                   </TableCell>
