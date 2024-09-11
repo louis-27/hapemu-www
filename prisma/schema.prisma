@@ -4,8 +4,8 @@ generator client {
 
 datasource db {
   provider  = "postgresql"
-  directUrl = env("DIRECT_URL")
   url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 model antutu {
@@ -42,6 +42,7 @@ model smartphones {
   preview      String?
   zoom         String?
   processor    String?
+  likes        Int       @default(0)
 
   @@id([id, name])
 }
