@@ -1,14 +1,25 @@
 "use client";
 
-import { Card } from "flowbite-react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import React, { useState } from "react";
-import { Button, TextInput } from "flowbite-react";
-import { useSearchParams } from "next/navigation";
+import { Button, Card, TextInput } from "flowbite-react";
+import { ThumbsUp } from "lucide-react";
+import { fetcher } from "~/lib/fetcher";
 
-import { Suspense } from "react";
+const toggleLikes = async (name: string, increment: boolean) => {
+  try {
+    const updateLikes = await fetcher(`like`, {
+      name,
+      increment,
+    });
 
-const EmailForm = () => {
+    const res = await updateLikes.json();
+  } catch {
+    console.error(`Caught error while updating like for smartphone ${name}`);
+  }
+};
+
+export default function EmailForm() {
   const [email, setEmail] = useState("");
   const searchParams = useSearchParams();
   const recommendationsParam = searchParams.get("recommendations");
@@ -16,13 +27,29 @@ const EmailForm = () => {
   const parseRecommendations = recommendationsParam
     ? JSON.parse(decodeURIComponent(recommendationsParam))
     : [];
-  const [recommendations] = useState(parseRecommendations.recommendations);
-
-  console.log(parseRecommendations);
+  const [recommendations, setRecommendations] = useState(
+    parseRecommendations.recommendations.map((item: any) => ({
+      name: String(item),
+      liked: false,
+    }))
+  );
 
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
+
+  const handleLike = async (index: number) => {
+    setRecommendations((prevRecommendations: { liked: boolean }[]) =>
+      prevRecommendations.map((item, i) =>
+        i === index ? { ...item, liked: !item.liked } : item
+      )
+    );
+
+    await toggleLikes(
+      recommendations[index].name,
+      !recommendations[index].liked
+    );
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -89,18 +116,23 @@ const EmailForm = () => {
           </svg>
 
           <div className="flex flex-col justify-center px-2 md:px-5">
-            {/* <p className="mb-2 text-xl sm:text-2xl">Hapemu adalah</p>
-                        <p className="mb-2 text-xl sm:text-2xl">{parseRecommendations.recommendations[0]}</p>
-                        <p className="mb-2 text-xl sm:text-2xl">{parseRecommendations.recommendations[1]}</p>
-                        <p className="mb-2 text-xl sm:text-2xl">{parseRecommendations.recommendations[2]}</p>
-                        <p className="mb-2 text-xl sm:text-2xl">{parseRecommendations.recommendations[3]}</p>
-                        <p className="mb-2 text-xl sm:text-2xl">{parseRecommendations.recommendations[4]}</p> */}
             {recommendations.map((recommendation, index) => (
-              <p key={index} className="mb-2 text-xl sm:text-2xl">
-                {recommendation}
-              </p>
+              <li key={index} className="flex items-center space-x-2">
+                <Button
+                  color="blue"
+                  size="icon"
+                  onClick={() => handleLike(index)}
+                  className={`w-8 h-8 items-center ${
+                    recommendation.liked ? "text-green-500" : "text-gray-500"
+                  }`}
+                >
+                  <ThumbsUp className="h-4 w-4" />
+                  <span className="sr-only">Like</span>
+                </Button>
+                <p className="text-xl sm:text-xl">{recommendation.name}</p>
+              </li>
             ))}
-            <p className="mb-2 text-xl sm:text-2xl">Terima kasih.</p>
+            <p className="my-2 text-xl sm:text-2xl">Terima kasih.</p>
           </div>
         </div>
         <div className="bg-white rounded-b-3xl items-center justify-center p-4 space-y-4 sm:flex sm:space-x-4 sm:space-y-0">
@@ -143,6 +175,4 @@ const EmailForm = () => {
       </div>
     </div>
   );
-};
-
-export default EmailForm;
+}
