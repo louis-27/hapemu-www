@@ -117,7 +117,11 @@ export default function EmailForm() {
 
           <div className="flex flex-col justify-center px-2 md:px-5">
             {recommendations.map((recommendation, index) => (
-              <li key={index} className="flex items-center space-x-2">
+              <li
+                key={index}
+                className="flex items-center space-x-3 justify-between"
+              >
+                <p className="text-xl sm:text-xl">{recommendation.name}</p>
                 <Button
                   color="blue"
                   size="icon"
@@ -129,7 +133,6 @@ export default function EmailForm() {
                   <ThumbsUp className="h-4 w-4" />
                   <span className="sr-only">Like</span>
                 </Button>
-                <p className="text-xl sm:text-xl">{recommendation.name}</p>
               </li>
             ))}
             <p className="my-2 text-xl sm:text-2xl">Terima kasih.</p>
