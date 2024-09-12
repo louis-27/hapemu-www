@@ -5,13 +5,12 @@ export async function POST(req: Request) {
   const { name, increment } = await req.json();
 
   try {
-    const updateLikes = increment ? { increment: 1 } : { decrement: 1 };
     const result = await prisma.smartphones.updateMany({
       where: {
         name: name,
       },
       data: {
-        likes: updateLikes,
+        likes: { increment: increment ? 1 : -1 },
       },
     });
 
