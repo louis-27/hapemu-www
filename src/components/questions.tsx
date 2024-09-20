@@ -118,7 +118,7 @@ export default function Questions() {
             >
               <div className="block">
                 <div className="w-full text-lg font-semibold">
-                  Rp3.000.001 - Rp7.000.000
+                  Rp3.000.001 - Rp5.000.000
                 </div>
                 <div className="w-full">Hape Midrange</div>
               </div>
@@ -141,7 +141,7 @@ export default function Questions() {
             >
               <div className="block">
                 <div className="w-full text-lg font-semibold">
-                  Rp7.000.001 - Rp12.000.000
+                  Rp5.000.001 - Rp7.000.000
                 </div>
                 <div className="w-full">Hape Premium</div>
               </div>
@@ -163,7 +163,7 @@ export default function Questions() {
             >
               <div className="block">
                 <div className="w-full text-lg font-semibold">
-                  Lebih dari Rp12.000.000
+                  Lebih dari Rp7.000.000
                 </div>
                 <div className="w-full">Hape Ultra Premium</div>
               </div>
